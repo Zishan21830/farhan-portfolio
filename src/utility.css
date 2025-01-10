@@ -1,0 +1,53 @@
+.glass-effect {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(8px); /* Blurring effect */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+}
+
+.glass-effect:hover {
+  transform: translateY(-3px);
+}
+
+.scene {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  perspective: 800px;
+}
+
+.card {
+  position: relative;
+  width: 240px;
+  height: 300px;
+  color: white;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(0.5turn);
+}
+
+.card-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 1s ease-in-out;
+}
+
+.card-face img {
+  width: 240px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-face-back {
+  transform: rotateY(0.5turn);
+}
