@@ -35,7 +35,7 @@ const Skills = () => {
   };
   return (
     <div className="bg-black h-fit pb-10">
-      <div className="xs:px-4 md:px-20">
+      <div className="xs:px-4 md:px-20 flex justify-center items-center">
         <Heading heading={"Skills"} />
       </div>
       <div>

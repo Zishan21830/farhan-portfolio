@@ -47,7 +47,7 @@ const dataAnalysisProjects = [
 const Projects = () => {
   return (
     <section className="min-h-fit bg-[#131718] pb-10">
-      <div className="xs:px-4 xs:py-10 md:py-0 md:px-20">
+      <div className="xs:px-4 xs:py-10 md:py-0 md:px-20 flex justify-center items-center">
         <Heading heading={"Projects"} />
       </div>
       <div className="scene flex justify-center flex-wrap gap-3 w-full h-full text-white p-10">
