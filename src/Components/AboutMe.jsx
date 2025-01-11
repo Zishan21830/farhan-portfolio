@@ -5,14 +5,14 @@ import ISpeakData from "../assets/ISpeakData.png";
 
 const AboutMe = () => {
   return (
-    <section className="bg-[#141819] w-full min-h-fit">
+    <section className="bg-[#141819] w-full min-h-fit pb-10">
       {/* heaidng */}
       <div className="xs:px-4 md:px-20 flex justify-center items-center">
         <Heading heading={"About Me"} />
       </div>
       {/* Lower container to holds the main information of about me page */}
-      <div className="flex xs:flex-col md:flex-row w-full min-h-[80vh]">
-        <div className="xs:w-full md:w-2/5 h-full flex justify-center items-center">
+      <div className="flex xs:flex-col md:flex-row w-full min-h-full">
+        <div className="xs:w-full md:w-2/5 h-full xs:mt-20 md:mt-28 lg:mt-20 xl:mt-0">
             <img src={aboutPageImage} alt="About page side image" className="pb-6"/>
         </div>
         <div className="xs:w-full md:w-2/3 min-h-[50vh] flex justify-center items-center">

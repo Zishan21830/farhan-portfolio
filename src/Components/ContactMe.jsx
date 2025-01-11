@@ -78,11 +78,11 @@ const ContactMe = () => {
           </div>
         </div>
         {/* right container */}
-        <div className="h-full xs:w-full md:w-2/6 bg-black flex justify-center items-center py-10">
+        <div className="h-full xs:w-full lg:w-2/6 bg-black flex justify-center items-center py-10">
           <div className="flex flex-col gap-[10rem]">
             <div>
-              <h1 className="text-gray-500 text-2xl">What services</h1>
-              <h1 className="text-white text-2xl">we can support you with?</h1>
+              <h1 className="text-gray-500 text-2xl m-3">What services</h1>
+              <h1 className="text-white text-2xl m-3">we can support you with?</h1>
             </div>
             <form
               action="https://formspree.io/f/mjkkjera"
