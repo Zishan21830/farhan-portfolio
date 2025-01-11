@@ -7,7 +7,7 @@ const Heading = ({heading}) => {
         {
             headingChar.map((c, idx)=>{
                 return (
-                    <span key={idx} className={`xs:text-2xl md:text-4xl text-blue-500 font-lora ${idx < 3 ? "font-normal" : "font-bold"}`}>{c}</span>
+                    <span key={idx} className={`xs:text-2xl md:text-4xl text-white font-lora ${idx < 3 ? "font-normal" : "font-bold"}`}>{c}</span>
                 )
             })
         }

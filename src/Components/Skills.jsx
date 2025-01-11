@@ -15,8 +15,10 @@ const Skills = () => {
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg",
       "https://user-images.githubusercontent.com/315810/92161415-9e357100-edfe-11ea-917d-f9e33fd60741.png",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
+      "https://scipy.org/images/logo.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg",
+      "https://miro.medium.com/v2/resize:fit:592/1*YM2HXc7f4v02pZBEO8h-qw.png",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg",
@@ -43,7 +45,7 @@ const Skills = () => {
                     <div className="flex justify-center items-start">
                         <div className="flex flex-col items-center my-5">
                         <h1 className="text-white text-lg font-semibold font-poppins mb-4">{key}</h1>
-                        <div className="flex gap-5 flex-wrap justify-center">
+                        <div className="flex gap-4 flex-wrap justify-center">
                             {skillsData[key].map((e)=>{
                                 {console.log(e)}
                                 return (

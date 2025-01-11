@@ -12,17 +12,11 @@
 }
 
 .scene {
-  width: 1000px;
-  display: flex;
-  justify-content: space-between;
   perspective: 800px;
 }
 
 .card {
   position: relative;
-  width: 240px;
-  height: 300px;
-  color: white;
   cursor: pointer;
   transition: 1s ease-in-out;
   transform-style: preserve-3d;
@@ -43,8 +37,6 @@
 }
 
 .card-face img {
-  width: 240px;
-  height: 300px;
   object-fit: cover;
 }
 
