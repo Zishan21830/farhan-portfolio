@@ -71,9 +71,9 @@ const Projects = () => {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {
-                    project.techStack.map(tech => {
+                    project.techStack.map((tech, idx) => {
                       return (
-                        <span className="xs:px-1 xs:py-[0.15rem] sm:px-2 sm:py-1 bg-white text-black rounded-md">{tech}</span>
+                        <span className="xs:px-1 xs:py-[0.15rem] sm:px-2 sm:py-1 bg-white text-black rounded-md" key={idx}>{tech}</span>
                       )
                     })
                   }

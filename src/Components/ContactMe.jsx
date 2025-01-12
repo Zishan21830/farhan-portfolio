@@ -1,9 +1,9 @@
 import React from "react";
 import { useForm } from "@formspree/react";
-import Heading from "./Heading.jsx";
-import devImage from "../assets/favicon.png";
 import { FaGithub, FaLinkedin, FaInstagram, FaKaggle } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Heading from "./Heading.jsx";
+import devImage from "../assets/favicon.png";
 import ThankyouPage from "./ThankyouPage.jsx";
 
 const ContactMe = () => {
@@ -39,7 +39,7 @@ const ContactMe = () => {
                   href="mailto:farhan420.official@gmail.com"
                   className="bg-black px-3 py-2 text-lime-400 rounded-md cursor-pointer"
                 >
-                  E-mail
+                  farhan420.official@gmail.com
                 </a>
                 <span className="bg-black px-3 py-2 text-lime-400 rounded-md">
                   7900240104
@@ -92,21 +92,21 @@ const ContactMe = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block m-3 w-full"
+                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block w-full mb-2"
                 name="username"
                 required
               />
               <input
                 type="email"
                 placeholder="E-mail"
-                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block m-3 w-full"
+                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block w-full mb-2"
                 name="email"
                 required
               />
               <input
                 type="text"
                 placeholder="Subject"
-                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block m-3 w-full"
+                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block w-full mb-2"
                 name="subject"
                 required
               />
@@ -115,10 +115,10 @@ const ContactMe = () => {
                 id="message"
                 rows="5"
                 placeholder="Message"
-                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block m-3 w-full"
+                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block w-full mb-3"
               ></textarea>
 
-              <button className="w-full bg-lime-400 text-black ml-3 px-1 py-2 rounded-md">
+              <button className="w-full bg-lime-400 text-black mt-3 px-1 py-2 rounded-md hover:bg-lime-300">
                 Submit
               </button>
             </form>

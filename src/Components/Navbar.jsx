@@ -125,8 +125,7 @@ const Navbar = () => {
         className="text-white text-2xl xs:flex lg:hidden"
         onClick={handleMobileMenu}
       >
-        <FaAlignRight className={mobileMenu ? "hidden" : "block"} />
-        <RxCross2 className={mobileMenu ? "block" : "hidden"} />
+      {!mobileMenu ? <FaAlignRight /> : <RxCross2 />}
       </div>
     </nav>
   );
