@@ -54,26 +54,26 @@ const dataAnalystServices = [
 
 const Services = () => {
   return (
-    <div className="min-h-fit bg-[#131718] pb-10 font-poppins">
+    <section className="min-h-fit bg-[#131718] pb-10 font-poppins" id="service">
       <div className="xs:px-4 md:px-20 flex justify-center items-center">
         <Heading heading={"Services"} />
       </div>
       <div className="flex gap-3  min-h-full flex-wrap justify-center items-center p-10">
-        {dataAnalystServices.map((s) => {
+        {dataAnalystServices.map((service, idx) => {
           return (
-            <div className={`min-h-[22rem] w-[22rem] ${s.bgColor} p-2 pl-5 pt-5 rounded-md`}>
-              <div className="w-20 h-20 rounded-full bg-black flex justify-center items-center">
-              <s.icon className={`text-4xl  text-lime-400`}/>
+            <div className={`xs:min-h-[21rem] xs:w-[18rem] md:min-h-[21rem] md:w-[20rem] ${service.bgColor} pl-5 pt-5 rounded-md`} key={idx}>
+              <div className="xs:w-16 xs:h-16  rounded-full bg-black flex justify-center items-center">
+              <service.icon className={`xs:text-2xl md:text-4xl  text-lime-400`}/>
               </div>
-              <h1 className={`${s.headingColor} font-bold text-xl pt-2`}>{s.name}</h1>
-              <p className={`text-sm mt-2`}>{s.description}</p>
+              <h1 className={`${service.headingColor} font-bold xs:text-lg md:text-xl pt-2`}>{service.name}</h1>
+              <p className={`text-sm mt-2`}>{service.description}</p>
               <div>
                 <h2>Tools</h2>
                 <div>
                   <div className="m-3 ml-0 flex flex-wrap">
-                    {s.tools.map((tool) => {
+                    {service.tools.map((tool, idx) => {
                       return (
-                        <span className="bg-black text-lime-400 px-2 py-1 m-1 rounded-md text-sm">
+                        <span className="bg-black text-lime-400 px-2 py-1 m-1 rounded-md text-sm" key={idx}>
                           {tool}
                         </span>
                       );
@@ -85,7 +85,7 @@ const Services = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,7 +3,7 @@ import Heading from "./Heading";
 
 const Education = () => {
   return (
-    <div className="min-h-fit bg-[#131718] pb-10 font-poppins flex xs:flex-col md:flex-row">
+    <div className="min-h-fit bg-[#131718] pb-10 font-poppins flex xs:flex-col md:flex-row" id="education">
       {/* Education */}
       <div className="xs:w-full md:w-2/4 h-full">
         {/* heading */}

@@ -45,15 +45,15 @@ const dataAnalysisProjects = [
 ];
 
 const Projects = () => {
-  return (
-    <section className="min-h-fit bg-[#131718] pb-10">
+  return ( 
+    <section className="min-h-fit bg-[#131718] pb-10" id="project">
       <div className="xs:px-4 xs:py-10 md:py-0 md:px-20 flex justify-center items-center">
         <Heading heading={"Projects"} />
       </div>
-      <div className="scene flex justify-center flex-wrap gap-3 w-full h-full text-white p-10">
+      <div className="scene flex justify-center flex-wrap gap-5 w-full h-full text-white p-5">
         {dataAnalysisProjects.map((project) => {
           return (
-            <div className="card rounded-md h-[23rem] w-[18rem]">
+            <div className="card rounded-md xs:h-[28rem] xs:min-w-[20rem] sm:h-[23rem] sm:w-[16rem]">
               <div className="card-face card-face-front w-full glass-effect">
                 <div className="h-3/4  rounded-md p-4">
                   <img src={project.imageLink} alt={project.projectName} className="h-full w-full object-contain rounded-md"/>
@@ -73,7 +73,7 @@ const Projects = () => {
                   {
                     project.techStack.map(tech => {
                       return (
-                        <span className="px-2 py-1 bg-white text-black rounded-md">{tech}</span>
+                        <span className="xs:px-1 xs:py-[0.15rem] sm:px-2 sm:py-1 bg-white text-black rounded-md">{tech}</span>
                       )
                     })
                   }
