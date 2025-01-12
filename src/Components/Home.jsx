@@ -3,6 +3,7 @@ import homePageImage from "../assets/home-page-image.jpg";
 import { FaGithub, FaLinkedin, FaInstagram, FaKaggle} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import '../utility.css'
+import ParticlesBackground from "./ParticlesBackground";
 
 const Home = () => {
   return (
@@ -13,7 +14,9 @@ const Home = () => {
           src={homePageImage}
           alt="home page image"
           className="xs:h-[50vh] md:h-[90vh] w-full"
+
         />
+        {/* <ParticlesBackground/> */}
       </div>
      
       <div className="xs:px-4 xs:my-10 md:my-0 md:px-20">
@@ -22,7 +25,7 @@ const Home = () => {
           <div className="text-2xl text-white">Data Analyst</div>
           <button className="xs:text-sm xs:px-3 xs:py-1 md:px-4 md:py-2 md:text-base cursor-pointer rounded-lg border-2 border-white outline-none mt-4 text-white bg-transparent hover:bg-white hover:text-black transition-colors">Resume</button>
            {/* social plateform links */}
-          <ul className="flex gap-3 mt-4">
+          <ul className="flex gap-3 mt-4 flex-wrap">
             <li className="xs:p-2 md:p-3 glass-effect text-white xs:text-xl md:text-3xl"><FaGithub/></li>
             <li className="xs:p-2 md:p-3 glass-effect text-white xs:text-xl md:text-3xl"><FaLinkedin/></li>
             <li className="xs:p-2 md:p-3 glass-effect text-white xs:text-xl md:text-3xl"><FaInstagram/></li>

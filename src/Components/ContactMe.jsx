@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import React from "react";
+import { useForm } from "@formspree/react";
 import Heading from "./Heading.jsx";
 import devImage from "../assets/favicon.png";
 import { FaGithub, FaLinkedin, FaInstagram, FaKaggle } from "react-icons/fa";
@@ -12,7 +12,7 @@ const ContactMe = () => {
     return <ThankyouPage/>
   }
   return (
-    <div className="bg-black min-h-fit font-poppins">
+    <div className="bg-black min-h-fit font-poppins" id="contact">
       {/* this contianer for heading */}
       <div className="xs:px-4 xs:py-10 md:pt-10 md:px-20 flex justify-center items-center">
         <Heading heading={"Contact Me"} />
@@ -20,7 +20,7 @@ const ContactMe = () => {
       {/* main container to contains the main content */}
       <div className="h-full flex xs:flex-col lg:flex-row xs:px-4 xs:py-10 md:py-0 md:px-20">
         {/* left conatainer */}
-        <div className=" xs:w-full lg:w-2/3 rounded-t-3xl bg-gradient-to-b from-lime-400 to-white h-full border-2  border-none flex flex-col justify-between gap-[7rem]">
+        <div className=" xs:w-full lg:w-2/3 rounded-t-3xl bg-gradient-to-b from-lime-400 to-white h-full border-2  border-none flex flex-col justify-between xs:gap-[5rem] lg:gap-[9rem]">
           {/* top  */}
           <div className="flex justify-between flex-wrap xs:px-4 xs:py-10 md:py-10 md:px-20">
             {/* left */}

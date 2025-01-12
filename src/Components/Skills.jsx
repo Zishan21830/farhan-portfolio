@@ -34,8 +34,8 @@ const Skills = () => {
     ],
   };
   return (
-    <div className="bg-black h-fit pb-10">
-      <div className="xs:px-4 md:px-20 flex justify-center items-center">
+    <section className="bg-black h-fit pb-10" id="skill">
+      <div className="flex justify-center items-center">
         <Heading heading={"Skills"} />
       </div>
       <div>
@@ -45,7 +45,7 @@ const Skills = () => {
                     <div className="flex justify-center items-start">
                         <div className="flex flex-col items-center my-5">
                         <h1 className="text-white text-lg font-semibold font-poppins mb-4">{key}</h1>
-                        <div className="flex gap-4 flex-wrap justify-center">
+                        <div className="flex gap-4 flex-wrap justify-center px-4">
                             {skillsData[key].map((e)=>{
                                 {console.log(e)}
                                 return (
@@ -59,7 +59,7 @@ const Skills = () => {
             })
         }
       </div>
-    </div>
+    </section>
   );
 };
 //
