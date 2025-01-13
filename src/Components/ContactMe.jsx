@@ -1,18 +1,18 @@
-import React from "react";
-import { useForm } from "@formspree/react";
-import { FaGithub, FaLinkedin, FaInstagram, FaKaggle } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import React, { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import Heading from "./Heading.jsx";
 import devImage from "../assets/favicon.png";
+import { FaGithub, FaLinkedin, FaInstagram, FaKaggle } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import ThankyouPage from "./ThankyouPage.jsx";
 
 const ContactMe = () => {
   const [state, handleSubmit] = useForm("mjkkjera");
   if (state.succeeded) {
-    return <ThankyouPage/>
+    return <ThankyouPage />;
   }
   return (
-    <div className="bg-black min-h-fit font-poppins" id="contact">
+    <div className="bg-black min-h-fit font-poppins">
       {/* this contianer for heading */}
       <div className="xs:px-4 xs:py-10 md:pt-10 md:px-20 flex justify-center items-center">
         <Heading heading={"Contact Me"} />
@@ -20,7 +20,7 @@ const ContactMe = () => {
       {/* main container to contains the main content */}
       <div className="h-full flex xs:flex-col lg:flex-row xs:px-4 xs:py-10 md:py-0 md:px-20">
         {/* left conatainer */}
-        <div className=" xs:w-full lg:w-2/3 rounded-t-3xl bg-gradient-to-b from-lime-400 to-white h-full border-2  border-none flex flex-col justify-between xs:gap-[5rem] lg:gap-[9rem]">
+        <div className=" xs:w-full lg:w-2/3 rounded-t-3xl bg-gradient-to-b from-lime-400 to-white h-full border-2  border-none flex flex-col justify-between xs:gap-[7rem] lg:gap-[10rem]">
           {/* top  */}
           <div className="flex justify-between flex-wrap xs:px-4 xs:py-10 md:py-10 md:px-20">
             {/* left */}
@@ -59,21 +59,46 @@ const ContactMe = () => {
               Into meaningful decisions
             </h1>
             <ul className="flex gap-3 mt-4 pl-3 pt-3">
-              <li className="xs:p-2 md:p-3 bg-black text-lime-400 xs:text-xl md:text-xl rounded-md cursor-pointer">
+              <a
+                href="https://github.com/farhanjameel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="xs:p-2 md:p-3 bg-black text-lime-400 xs:text-xl md:text-xl rounded-md cursor-pointer"
+              >
                 <FaGithub />
-              </li>
-              <li className="xs:p-2 md:p-3 bg-black text-lime-400 xs:text-xl md:text-xl rounded-md cursor-pointer">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/farhangada/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="xs:p-2 md:p-3 bg-black text-lime-400 xs:text-xl md:text-xl rounded-md cursor-pointer"
+              >
                 <FaLinkedin />
-              </li>
-              <li className="xs:p-2 md:p-3 bg-black text-lime-400 xs:text-xl md:text-xl rounded-md cursor-pointer">
+              </a>
+              <a
+                href="https://www.instagram.com/farhanibnjameel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="xs:p-2 md:p-3 bg-black text-lime-400 xs:text-xl md:text-xl rounded-md cursor-pointer"
+              >
                 <FaInstagram />
-              </li>
-              <li className="xs:p-2 md:p-3 bg-black text-lime-400 xs:text-xl md:text-xl rounded-md cursor-pointer">
+              </a>
+              <a
+                href="https://x.com/farhangada05"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="xs:p-2 md:p-3 bg-black text-lime-400 xs:text-xl md:text-xl rounded-md cursor-pointer"
+              >
                 <FaXTwitter />
-              </li>
-              <li className="xs:p-2 md:p-3 bg-black text-lime-400 xs:text-xl md:text-xl rounded-md cursor-pointer">
+              </a>
+              <a
+                href="https://www.kaggle.com/farhangada"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="xs:p-2 md:p-3 bg-black text-lime-400 xs:text-xl md:text-xl rounded-md cursor-pointer"
+              >
                 <FaKaggle />
-              </li>
+              </a>
             </ul>
           </div>
         </div>
@@ -82,7 +107,9 @@ const ContactMe = () => {
           <div className="flex flex-col gap-[10rem]">
             <div>
               <h1 className="text-gray-500 text-2xl m-3">What services</h1>
-              <h1 className="text-white text-2xl m-3">we can support you with?</h1>
+              <h1 className="text-white text-2xl m-3">
+                we can support you with?
+              </h1>
             </div>
             <form
               action="https://formspree.io/f/mjkkjera"
@@ -92,21 +119,21 @@ const ContactMe = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block w-full mb-2"
+                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block m-3 w-full"
                 name="username"
                 required
               />
               <input
                 type="email"
                 placeholder="E-mail"
-                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block w-full mb-2"
+                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block m-3 w-full"
                 name="email"
                 required
               />
               <input
                 type="text"
                 placeholder="Subject"
-                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block w-full mb-2"
+                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block m-3 w-full"
                 name="subject"
                 required
               />
@@ -115,10 +142,10 @@ const ContactMe = () => {
                 id="message"
                 rows="5"
                 placeholder="Message"
-                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block w-full mb-3"
+                className="text-white bg-transparent border-b-2 border-b-white outline-none py-1 block m-3 w-full"
               ></textarea>
 
-              <button className="w-full bg-lime-400 text-black mt-3 px-1 py-2 rounded-md hover:bg-lime-300">
+              <button className="w-full bg-lime-400 text-black ml-3 px-1 py-2 rounded-md hover:bg-lime-300">
                 Submit
               </button>
             </form>
